@@ -1,8 +1,9 @@
 ##### Programme writen by Antonin Michon ;
 ### MasterMind Tkinter v2.1
 
+from cgitb import text
 from tkinter import*
-from random import randint, choices
+from random import randint
 
 # Fuction :
 def homepage():
@@ -59,6 +60,10 @@ def level1():
     win1.geometry("1280x720")
     win1.minsize(720, 480)
     win1.config(background='#5cb638')
+    
+    # Button :
+    gen = Button(win1, text="Générer composition", bg='#FFFFFF', fg='#000000')
+    gen.pack()
     
 
 

@@ -2,6 +2,7 @@
 ### MasterMind Tkinter v2.1
 
 from cgitb import text
+from distutils import command
 from tkinter import*
 from random import randint
 
@@ -62,7 +63,22 @@ def level1():
     win1.config(background='#5cb638')
     
     # Button :
-    gen = Button(win1, text="Générer composition", bg='#FFFFFF', fg='#000000')
+    def generation():
+        """[Génère une composition de 5 Couleurs]
+    Returns:
+        [list]: [Composition ordinateur]
+    """
+    liste = []
+    complete = False
+    while not complete :
+        if len(liste) == 5:
+            complete = True
+        nbr = randint(1, 8)
+        if nbr not in liste :
+            liste.append(nbr)
+    return liste
+
+    gen = Button(win1, text="Générer composition", bg='#FFFFFF', fg='#000000', command=generation)
     gen.pack()
     
 

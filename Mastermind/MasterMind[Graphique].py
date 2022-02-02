@@ -80,6 +80,7 @@ def level1():
 
     gen = Button(win1, text="Générer composition", bg='#FFFFFF', fg='#000000', command=generation)
     gen.pack()
+    # Lors de l'appui, génere une combinaison
     
 
 

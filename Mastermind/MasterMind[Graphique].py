@@ -65,22 +65,29 @@ def level1():
     # Button :
     def generation():
         """[Génère une composition de 5 Couleurs]
-    Returns:
-        [list]: [Composition ordinateur]
-    """
-    liste = []
-    complete = False
-    while not complete :
-        if len(liste) == 5:
-            complete = True
-        nbr = randint(1, 8)
-        if nbr not in liste :
-            liste.append(nbr)
-    return liste
-
-    gen = Button(win1, text="Générer composition", bg='#FFFFFF', fg='#000000', command=generation)
-    gen.pack()
-    # Lors de l'appui, génere une combinaison
+        Returns:
+            [list]: [Composition ordinateur]
+        """
+        
+        liste = []
+        complete = False
+        while not complete :
+            if len(liste) == 5:
+                complete = True
+            nbr = randint(1, 8)
+            if nbr not in liste :
+                liste.append(nbr)
+        return liste
+    
+    generation()
+    
+    usr = Entry(win1, text="Entrer votre combinaison de couleur", bg='#FFFFFF', fg='#000000')
+    usr.pack()
+    def printmess():
+        print(usr())
+    affich = Button(win1, text="Afficher la couleur entrée", bg='#FFFFFF', fg='#000000', command=printmess)
+    affich.pack()
+    
     
 
 

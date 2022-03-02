@@ -1,8 +1,6 @@
 ##### Programme writen by Antonin Michon ;
 ### MasterMind Tkinter v2.1
-
-from cgitb import text
-from distutils import command
+######## THIS PROGRAM DOESN'T WORK !!!!!!!#########
 from tkinter import*
 from random import randint
 

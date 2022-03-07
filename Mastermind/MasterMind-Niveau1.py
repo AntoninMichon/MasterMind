@@ -96,7 +96,7 @@ def user(tab, verif) :
 
 #=========PRÉFÉRENCE========#
 color = ["blanc", "jaune", "rouge", "bleu", "vert", "noir", "violet", "marron"] # Si vous le souhaitez, vous pouvez rajouter une couleur ici.
-error_left = input("Entrer le nombre d'erreur maximum que vous souhaitez")
+error_left = int(input("Entrer le nombre d'erreur maximum que vous souhaitez\n=>"))
 #===========================#
 
 verification = 0

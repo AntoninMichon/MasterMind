@@ -1,10 +1,10 @@
 ###### Program writen by Michon Antonin
-###### 20/01/2022  === Python 3.9.7 === 64bit
-######====MasterMind=====###### {v1.9.7}
+#?##### 20/01/2022  === Python 3.9.7 === 64bit
+#?#####====MasterMind=====###### {v1.9.7}
 from random import randint
 
 
-# Color Dict :
+#! Color Dict :
 
 color_library = {'blanc':1, 'jaune':2, 'rouge':3, 'bleu':4, 'vert':5, 'noir':6, 'violet':7, 'marron':8 }
 
@@ -56,17 +56,17 @@ def user(tab):
     return liste
 
 
-##############################
-# Variables :
-#=========PRÉFÉRENCE========#
+#?#############################
+# !Variables :
+# ?Nombre d'erreur autorisé :
 error_left = 10
-#===========================#
+#?===========================#
 color = ["blanc", "jaune", "rouge", "bleu", "vert", "noir", "violet", "marron"]
 ordi_combi = color_choice()
 user_combi = user(color)
 running = True
 verification = 0 
-##############################
+#?#############################
 
 
 def comparaison(pc, usr):

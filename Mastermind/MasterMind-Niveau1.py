@@ -1,12 +1,12 @@
 ###### Program writen by Michon Antonin
-###### 20/01/2022  === Python 3.9.7 === 64bit
-######====MasterMind=====###### {v2.1.3}
+#?##### 20/01/2022  === Python 3.9.7 === 64bit
+#?#####====MasterMind=====###### {v2.1.3}
 
-# Imports :
+# !Imports :
 from random import randint
 
 
-# Script
+# !Script
 def computer(tab) :
     
     """Computer :
@@ -91,20 +91,20 @@ def user(tab, verif) :
     return liste
         
         
-###########################
-# Variables :
+#?##########################
+# !Variables :
 
-#=========PRÉFÉRENCE========#
-color = ["blanc", "jaune", "rouge", "bleu", "vert", "noir", "violet", "marron"] # Si vous le souhaitez, vous pouvez rajouter une couleur ici.
+#?=========PRÉFÉRENCE========#
+color = ["blanc", "jaune", "rouge", "bleu", "vert", "noir", "violet", "marron"]     #* Si vous le souhaitez, vous pouvez rajouter une couleur ici.
 error_left = int(input("Entrer le nombre d'erreur maximum que vous souhaitez\n=>"))
-#===========================#
+#?===========================#
 
 verification = 0
 running = True
 entrer =[False, False, False, False, False]
 ordi_combi = computer(color)
 user_combi = user(color, entrer)
-##########################
+#?#########################
 
 def comparaison(pc, usr) :
     
@@ -166,7 +166,7 @@ def verif(nbr, tab):
         print("\nLa combinaison n'est pas correct, il vous reste encore {} essais...".format(error_left))
         return False
 
-# Boucle :
+# !Boucle :
 while running :
     
     """Boucle final

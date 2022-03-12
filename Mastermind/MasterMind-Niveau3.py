@@ -1,15 +1,15 @@
 ###### Program writen by Michon Antonin
-###### 20/01/2022  === Python 3.10.0 === 64bit
-######====MasterMind=====###### {v1.9.7}
+#?##### 20/01/2022  === Python 3.10.0 === 64bit
+#?#####====MasterMind=====###### {v1.9.7}
 
-# Import :
+# !Import :
 from random import randint
 
 
-# Color Dict :
+# !Color Dict :
 color_library = {'blanc':1, 'jaune':2, 'rouge':3, 'bleu':4, 'vert':5, 'noir':6, 'violet':7, 'marron':8 }
 
-# Script :
+# !Script :
 def color_choice():
     
     """[Génère une composition de 5 Couleurs]
@@ -23,7 +23,7 @@ def color_choice():
     return liste
 
 
-# Script
+# !Script
 def user(tab):
     
     """[Récupère la composition de l'utilisateur et le convertie en chiffre]
@@ -50,17 +50,17 @@ def user(tab):
     return liste
 
 
-##############################
-# Variables :
-#=========PRÉFÉRENCE========#
+#?#############################
+# !Variables :
+#?=========PRÉFÉRENCE========#
 error_left = 8
-#===========================#
+#?===========================#
 color = ["blanc", "jaune", "rouge", "bleu", "vert", "noir", "violet", "marron"]
 ordi_combi = color_choice()
 user_combi = user(color)
 running = True
 verification = 0 
-##############################
+#?#############################
 
 
 def comparaison(pc, usr):
@@ -121,7 +121,7 @@ def verif(nbr, tab):
         return False
 
 
-# Boucle Finale :
+# !Boucle Finale :
 while running :
     
     comparaison(ordi_combi, user_combi)

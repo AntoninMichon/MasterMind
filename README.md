@@ -8,7 +8,7 @@ Règle classique de MasterMind :
 10 essais tolérés, peut varier suivant le niveaux choisit (Vous pouvez également modifier cette valeur dans la variable commentée)
 <p color="red">Pour lancer le jeux, executer le programme/script "main.py"</p>
 
-# Niveaux :
+<h1 align="center">Niveaux :</h1>
 
 # Niveau 1 :
 => La même couleur ne peut pas être présente plusieur fois dans la combinaison secrete

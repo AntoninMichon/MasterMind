@@ -6,6 +6,7 @@ Réalisé par Michon Antonin
 Règle classique de MasterMind :
 8 Couleurs disponibles (Vous pouvez en rajouter en modifiant la liste commentée)
 10 essais tolérés, peut varier suivant le niveaux choisit (Vous pouvez également modifier cette valeur dans la variable commentée)
+<p color="red">Pour lancer le jeux, executer le programme/script "main.py"</p>
 
 # Niveaux :
 
